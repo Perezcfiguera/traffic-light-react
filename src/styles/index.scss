@@ -1,9 +1,47 @@
-// This is you main css file using scss.
+
 
 
 @import "bootstrap/scss/bootstrap";
 
 body {
   background-color: rgb(41, 40, 40);
-  color: white;
+  color: rgb(255, 255, 255);
 }
+
+.semaforo {
+  background: #222;
+  padding: 20px;
+  width: 120px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.light {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  opacity: 0.3;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.red {
+  background: red;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: limegreen;
+}
+
+.active {
+  opacity: 1;
+  box-shadow: 0 0 25px currentColor;
+}
+
